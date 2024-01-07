@@ -1,3 +1,4 @@
+import dis
 from matplotlib import pyplot as plt
 from matplotlib import animation
 from random import uniform
@@ -18,7 +19,7 @@ class ParticleSimulator:
     def __init__(self, particles):
         self.particles = particles
 
-    @profile
+    # @profile
     def evolve(self, dt):
         timestep = 0.00001
         nsteps = int(dt / timestep)
@@ -152,5 +153,6 @@ def benchmark_memory():
 
 
 if __name__ == "__main__":
-    benchmark()
-    timing()
+    dis.dis(ParticleSimulator.evolve)
+    # benchmark()
+    # timing()
