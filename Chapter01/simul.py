@@ -7,7 +7,7 @@ import timeit
 
 class Particle:
 
-    __slots__ = ("x", "y", "ang_speed")
+    # __slots__ = ("x", "y", "ang_speed")
 
     def __init__(self, x, y, ang_speed):
         self.x = x
@@ -153,6 +153,7 @@ def benchmark_memory():
 
 
 if __name__ == "__main__":
-    dis.dis(ParticleSimulator.evolve)
+    # dis.dis(ParticleSimulator.evolve)
     # benchmark()
+    benchmark_memory()
     # timing()
