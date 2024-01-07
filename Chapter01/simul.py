@@ -18,6 +18,7 @@ class ParticleSimulator:
     def __init__(self, particles):
         self.particles = particles
 
+    @profile
     def evolve(self, dt):
         timestep = 0.00001
         nsteps = int(dt / timestep)
@@ -152,3 +153,4 @@ def benchmark_memory():
 
 if __name__ == "__main__":
     benchmark()
+    timing()

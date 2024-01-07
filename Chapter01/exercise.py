@@ -21,3 +21,5 @@ def benchmark():
     simulator.evolve(0.1)
 
     print(close(particles))
+
+benchmark()

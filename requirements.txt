@@ -1,1 +1,5 @@
 matplotlib
+ipython
+pytest
+pytest-benchmark
+pyprof2calltree
